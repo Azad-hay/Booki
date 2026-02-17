@@ -99,7 +99,7 @@ header{
     width: 100%;
 }
 .headline{
-    line-height: 10px;
+    line-height: 15px;
 }
 
 .formulaire{
@@ -140,7 +140,46 @@ header{
     font-weight: 700;
 }
 
+/* Filtre */
 
+.filtre-button{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+.filtre-button button{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50px;
+    padding-top: 4px;
+    padding-left: 19px;
+    padding-bottom: 4px;
+    padding-right: 19px;
+    font-size: 17px;
+    font-weight: 700;
+}
+.filtre-button img{
+    padding-right: 8px;
+}
+
+.filtre-button button:hover{
+    background-color: #DEEBFF;
+}
+
+.infobar{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    gap: 10px;
+}
+.infobar img{
+    border: 1px;
+}
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
