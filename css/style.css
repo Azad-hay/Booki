@@ -63,7 +63,9 @@ a {
     color: var(--main-bg-color)
 }
 
-
+a {
+    cursor: default;
+}
 
 /* NAV */
 nav{
@@ -88,7 +90,6 @@ nav img{
     padding-top: 10px;
 }
 .nav-link a:hover{
-    cursor: default;
     color:#0065FC ;
     border-top:3px solid #0065FC; 
 }
@@ -205,10 +206,13 @@ padding-bottom: 25px;
 }
 
 .hebergements-card{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 15px;
-    
+}
+.hebergements-card .card{
+    width: 250px ;
+    margin-top: 33px;
 }
 
 .hebergements-card .card img{
@@ -273,7 +277,39 @@ border-top-right-radius: 15px;
     margin-bottom: 5px;
 }
 
+/* Activitées */
 
+#activitees{
+    padding: 30px;
+}
+
+.activitees-title{
+    margin-top: 50px;
+    padding-bottom: 25px;
+}
+.activitees{
+    display: flex;
+    gap: 30px;
+    
+}
+.activitees .card{
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 0;
+
+}
+.activitees .card img{
+    width: 300px;
+    height: 380px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px ;
+
+}
+.activitees h3{
+    padding: 20px 19px;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
