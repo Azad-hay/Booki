@@ -88,6 +88,7 @@ nav img{
 
 .nav-link a{
     padding-top: 10px;
+    border-top: 3px solid #fff;
 }
 .nav-link a:hover{
     color:#0065FC ;
@@ -108,7 +109,7 @@ header{
     overflow: hidden;
     border-radius: 15px;
 }
-.formulaire img{
+.formulaire > img{
     padding: 17px;
     background-color: #F2F2F2;
     border-top-left-radius:15px;
@@ -127,8 +128,9 @@ header{
     color: #000;
     
 }
-.formulaire button{
+.form-button{
     color: #f1f1f1;
+    width: auto;
     padding: 15px 15px 15px 15px;
     background-color: #0065FC;
     border: none;
@@ -136,6 +138,9 @@ header{
     border-top-right-radius:15px ;
     font-size: 18px;
     font-weight: 700;
+}
+.form-button-hidden{
+    display: none;
 }
 
 /* Filtre */
@@ -308,7 +313,7 @@ border-top-right-radius: 15px;
 
 }
 .activitees h3{
-    padding: 20 19px;
+    padding: 20px 19px;
 }
 
 /* footer */
@@ -387,7 +392,7 @@ footer{
         height: 200px;
     }
     .activitees .card h3{
-        padding: 0 0 15 19px;
+        padding: 0 0 15px 19px;
     }
     
     
@@ -403,10 +408,12 @@ footer{
    .main-container{
     padding: 0;
    }
-   header, main{
-    padding-left: 10px;
-    padding-right: 10px;
-   }
+  main{
+    padding: 0 10px;
+  }
+    .head, .filtres{
+        margin: 5px;
+    }
    nav{
     flex-direction: column; 
    }
@@ -422,6 +429,28 @@ footer{
     justify-content: space-evenly;
     padding: 0px;
     padding-bottom: 10px;
+   }
+
+   .formulaire{
+    width: 100%;
+   }
+   .form-button{
+    display: none;
+   }
+   .form-button-hidden{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: #0065FC;
+    border: none;
+    border-radius: 15px;
+    padding: 0;
+   }
+   .form-button-hidden img{
+    width: 17px;
+    height: 17px;
    }
    .filtre-button{
     flex-wrap: wrap;
@@ -451,8 +480,13 @@ footer{
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
+    padding: 0;
+    padding-bottom: 50px;
     }
     
+    .activitees .card{
+        width: 100%;
+    }
     .card{
         width: 100%; 
     }
@@ -468,7 +502,7 @@ footer{
     .hebergements-card a, .populaires-cards a{
         width: 100%;
         flex-direction: column;
-        margin: 0 10 0 10px;
+        margin: 0 10px 0 10px;
     }
 
     
@@ -476,14 +510,14 @@ footer{
         width: 30%;
     
 }
- footer{
+    footer{
     width: 100%;
     padding: 0;
     margin: 0;
     flex-direction: column;
     padding-bottom: 50px;
    }
- .section-footer{
+    .section-footer{
     padding-left: 70px;
  }
 }
