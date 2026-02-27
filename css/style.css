@@ -408,14 +408,13 @@ footer{
    .main-container{
     padding: 0;
    }
-  main{
-    padding: 0 10px;
-  }
-    .head, .filtres{
-        margin: 5px;
-    }
+
+   .head{
+    padding: 0 15px 0 15px;
+   }
    nav{
     flex-direction: column; 
+    padding: 0;
    }
     
    nav img {
@@ -423,14 +422,41 @@ footer{
    height: 19px;
    margin: auto;
    }
-   .nav-link{
+
+.nav-link{ 
     margin-top: 15px;
     justify-content: center;
-    justify-content: space-evenly;
     padding: 0px;
     padding-bottom: 10px;
    }
+  
+.nav-link a{
+    padding-top: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-top: 0;
+    padding-bottom: 15px;
+   
+}
+.nav-link a:hover{
+    border-top: 0;
+}
+.nav-link a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150%;
+    height: 3px;
+    background-color: transparent;
+}
 
+.nav-link a:hover::after {
+    background-color: #0065FC;
+}
+ 
    .formulaire{
     width: 100%;
    }
@@ -452,29 +478,46 @@ footer{
     width: 17px;
     height: 17px;
    }
+   .filtre-title {
+    padding: 0 15px;
+    width: 100%;
+   }
+   .infobar{
+    padding-left: 15px;
+   }
    .filtre-button{
     flex-wrap: wrap;
     justify-content: center;
+
    }
-   .filtre-title{
-    width: 100%;
+   .filtre-button button{
+    width: 140px;
+    font-size: 14px;
    }
-    
+   
    .headline{
     padding-top:40px;
    }
-     .hebergements-card .card,
+   
+    .hebergements-card .card,
     .activitees .card {
-        width: 100%;
+    width: 100%;
     }
 
+   .hebergements-and-populaires .populaires{
+    border-radius: 0;
+   }
    .populaires{
     order: 1;
+
    }
    #hebergements{
     order: 2;
     margin-top: 50px;
+    border-radius: 0;
+    background-color: #fff;
    }
+
    .activitees{
     display: flex;
     flex-wrap: wrap;
@@ -489,23 +532,22 @@ footer{
     }
     .card{
         width: 100%; 
+        
     }
-    
+   
+
     .populaires-cards{
         flex-wrap: wrap;
         height: auto;
         flex-direction: column;
-        width: 100%;
-        
-
+        width: 95%;
     }
     .hebergements-card a, .populaires-cards a{
         width: 100%;
         flex-direction: column;
-        margin: 0 10px 0 10px;
+        
     }
 
-    
     .populaires-cards img {
         width: 30%;
     
